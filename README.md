@@ -19,5 +19,5 @@
   - Clone the project to local directory or download it and unzip it to local directory.
   - Through terminal, go to the project directory(where app.py file is situated).
   - Run command 'pip install -r requirements.txt' or 'pip3 install -r requirements.txt'. (This will install all the requirements)
-  - Run command python app.py
+  - Run command 'python3 app.py' or 'python app.py'
   - Open browser and open link <a href="http://127.0.0.1:5000/">http://127.0.0.1:5000/<a/>
