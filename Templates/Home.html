@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="JOB RECOMMENDATION">
+    <meta name="description" content="">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/home_ex.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/Home.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"/>
+    <link rel="text/javascript" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"/>
+
+    <!--    <script type="text/javascript" src="{{ url_for('static', filename='logic/jquery4.js') }}"></script>-->
+    <script type="text/javascript" src="{{ url_for('static', filename='logic/user.js') }}"></script>
+
+
+    <link id="u-theme-google-font" rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+
+
+    <script type="application/ld+json">{
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "",
+        "logo": "images/ASU-emblem.jpg"
+    }</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Home">
+    <meta property="og:type" content="website">
+</head>
+<body class="u-body u-xl-mode" data-lang="en">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+        <a class="navbar-brand" href="/user">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="..." height="36">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/user">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/profile">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/logout">Log Out</a>
+                </li>
+                <!--        <li class="nav-item dropdown">-->
+                <!--          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">-->
+                <!--            Raumil-->
+                <!--          </a>-->
+                <!--          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">-->
+                <!--            <li><a class="dropdown-item" href="#">Log Out</a></li>-->
+                <!--            <li><a class="dropdown-item" href="#">Another action</a></li>-->
+                <!--&lt;!&ndash;            <li>&ndash;&gt;-->
+                <!--&lt;!&ndash;              <hr class="dropdown-divider">&ndash;&gt;-->
+                <!--&lt;!&ndash;            </li>&ndash;&gt;-->
+                <!--&lt;!&ndash;            <li><a class="dropdown-item" href="#">Something else here</a></li>&ndash;&gt;-->
+                <!--          </ul>-->
+                <!--        </li>-->
+            </ul>
+        </div>
+    </div>
+</nav>
+<section class="u-clearfix u-section-1" id="sec-721c">
+    <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-text u-text-default u-text-1">THE JOB FINDER</h2>
+        <div class="u-form u-form-1">
+            <form action="/user" method="POST"
+                  class="u-clearfix u-form-horizontal u-form-spacing-15 u-inner-form" style="padding: 15px;">
+                <div class="u-form-group u-form-name u-label-none">
+                    <label for="name-ef64" class="u-label">Name</label>
+                    <input type="text" placeholder="Company Name" id="name-ef64" name="cname"
+                           class="u-border-1 u-border-grey-30 u-input u-input-rectangle">
+                </div>
+                <div class="u-form-email u-form-group u-label-none">
+                    <label for="loc" class="u-label">Location</label>
+                    <input type="text" placeholder="Location" id="loc" name="location"
+                           class="u-border-1 u-border-grey-30 u-input u-input-rectangle">
+                </div>
+                <div class="u-form-group u-label-none u-form-group-3">
+                    <label for="text-b130" class="u-label">Input</label>
+                    <input type="text" id="text-b130" name="keyword"
+                           class="u-border-1 u-border-grey-30 u-input u-input-rectangle" placeholder="Keyword">
+                </div>
+                <div class="u-form-group u-form-select u-label-none u-form-group-4">
+                    <label for="select-23ea" class="u-label">Dropdown</label>
+                    <div class="u-form-select-wrapper">
+                        <select id="select-23ea" name="select"
+                                class="u-border-1 u-border-grey-30 u-input u-input-rectangle">
+                            <option value="Y">Yearly</option>
+                            <option value="H">Hourly</option>
+                        </select>
+                        <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px"
+                             viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
+                    </div>
+                </div>
+                <div class="u-form-group u-form-submit u-label-none">
+                    <!--              <input type="submit" value="submit" class="u-form-control-hidden">-->
+                    <input type="submit" class="u-btn u-btn-submit u-button-style" value="Search">
+                    <!--                    <a href="/user" class="u-btn u-btn-submit u-button-style"></a>-->
+                </div>
+                <!--                <div class="u-form-send-message u-form-send-success">#FormSendSuccess</div>-->
+                <!--                <div class="u-form-send-error u-form-send-message">#FormSendError</div>-->
+                <!--            <input type="hidden" value="" name="recaptchaResponse">-->
+                <!--            <input type="hidden" name="formServices" value="1d08b49254952a966f29ce2de46a8ed8">-->
+            </form>
+        </div>
+        <!--        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">-->
+        <!--            <div class="u-layout">-->
+        <!--                <div class="u-layout-row">-->
+        <!--                    <div class="u-container-style u-layout-cell u-size-60 u-layout-cell-1">-->
+        <!--                        <div class="u-container-layout u-container-layout-1">-->
+        <!--                            <div class="u-list u-list-1">-->
+        <div class="u-repeater u-repeater-1"
+             style="display:grid; grid-template-columns:1fr 1fr;padding:0px 28px 0px 48px;">
+            {% for job in data %}
+            <div class="card w-100">
+                <div class="card-body" style="display:flex; flex-direction:column; justify-content: space-between;">
+                    <div>
+                        <h6 class="card-title">{{job.company}}</h6>
+                        <h3>{{job.job}}</h3>
+                        <p class="card-text">{{job.desc}}</p>
+                        <p><strong>Location: </strong>{{job.city}}, {{job.state}}</p>
+
+                        <p><strong>Salary:</strong> {{job.salary}}</p>
+                        <p><strong>Salary Type: </strong>{{job.sal_type}}</p>
+                        <p><strong>Listing Date: </strong> {{job.date}}</p>
+                    </div>
+                    <a href="{{job.url}}" class="btn btn-primary">Apply To This Job</a>
+                </div>
+            </div>
+            {% endfor %}
+            <!--                                </div>-->
+            <!--                            </div>-->
+            <!--                        </div>-->
+            <!--                    </div>-->
+            <!--                </div>-->
+            <!--            </div>-->
+        </div>
+    </div>
+</section>
+<section class="u-clearfix u-section-2" id="sec-b7e5">
+    <div class="u-clearfix u-sheet u-sheet-1"></div>
+</section>
+
+
+<footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-bc18">
+    <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">Welcome to Our Job recommendation System.</p>
+    </div>
+</footer>
+
+</body>
+</html>
