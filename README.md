@@ -21,3 +21,7 @@
   - Run command 'pip install -r requirements.txt' or 'pip3 install -r requirements.txt'. (This will install all the requirements)
   - Run command 'python3 app.py' or 'python app.py'
   - Open browser and open link <a href="http://127.0.0.1:5000/">http://127.0.0.1:5000/<a/>
+  
+ 2) Running the web app
+ - Register with email, add preferences.
+ - Job recommendations will be listed.
