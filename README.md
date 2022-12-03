@@ -2,7 +2,13 @@
 
 <h3>Job Recommendation Web App</h1>
 
-1) Installation Steps:-
+<ul>
+  <li>GitHub: https://github.com/raumildhandhukia/SER531-Team30Project</li>
+  <li>YouTube: https://youtu.be/ETGPqOGw7BQ</li>
+</ul>
+
+
+Installation Steps:-
 
   a) Setup Fuseki Server:
   - Install JRE latest version and set JAVA and JAVA_HOME path (if java -version or java --version works in your terminal than skip this step).
@@ -22,6 +28,6 @@
   - Run command 'python3 app.py' or 'python app.py'
   - Open browser and open link <a href="http://127.0.0.1:5000/">http://127.0.0.1:5000/<a/>
   
- 2) Running the web app
+ Running the web app
  - Register with email, add preferences.
  - Job recommendations will be listed.
