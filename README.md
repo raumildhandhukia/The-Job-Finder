@@ -1,4 +1,4 @@
-# SER531-Team30Project
+# 
 
 <h3>Job Recommendation Web App</h1>
 
