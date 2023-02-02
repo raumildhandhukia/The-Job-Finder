@@ -3,7 +3,7 @@
 <h3>Job Recommendation Web App</h1>
 
 <ul>
-  <li>GitHub: https://github.com/raumildhandhukia/SER531-Team30Project</li>
+  <li>GitHub: https://github.com/raumildhandhukia/The-Job-Finder</li>
   <li>YouTube: https://youtu.be/ETGPqOGw7BQ</li>
 </ul>
 
